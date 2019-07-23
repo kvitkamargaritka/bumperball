@@ -1,0 +1,54 @@
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea
+  -webkit-appearance: none
+
+::-webkit-input-placeholder
+  color: #ffffff
+::-moz-placeholder
+  color: #ffffff
+
+a
+  display: inline-block
+  text-decoration: none
+
+img
+  display: inline-block
+  max-width 100%
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+button
+  padding: 0
+  border: 0
+  cursor: pointer
+
+.copyright
+  text-align: center
+
+.phone
+  margin-right: 30px
+  display: flex
+  flex-direction: column
+
+  &-item
+    color: #ffffff
+
+.logo
+  position: relative
+  display: inline-block
+  +media-tablet-landscape-up()
+    margin-left: 30px
+
+  &-img
+    +media-tablet-landscape-up()
+      display: none
+
+  &-img-small
+    display: none
+    +media-tablet-landscape-up()
+      display: block

@@ -1,0 +1,20 @@
+.copyright {
+  text-align: center;
+}
+.phone {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.phone-item {
+  color: #fff;
+}
+.logo {
+  position: relative;
+  display: inline-block;
+media-tablet-up()
+}
+.logo-img-small {
+  display: none;
+media-tablet-landscape-up()
+}

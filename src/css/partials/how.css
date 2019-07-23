@@ -1,0 +1,24 @@
+.how {
+  position: relative;
+  min-height: 1000px;
+  background-color: #fff;
+}
+.how .how-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how .icon {
+  display: block;
+  width: 73px;
+  height: 73px;
+  background-image: url("/img/how-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.how .heading-title {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #fff;
+}

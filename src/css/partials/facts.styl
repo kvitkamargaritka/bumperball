@@ -1,0 +1,53 @@
+//.fact
+//  width: 416px
+//  background-color: #000
+//  border-radius: 25px
+//  overflow: hidden
+//  padding: 36px
+//  box-sizing: border-box
+//
+//  -webkit-box-shadow: 0px 0px 28px 0px rgba(23,153,212,0.29);
+//  -moz-box-shadow: 0px 0px 28px 0px rgba(23,153,212,0.29);
+//  box-shadow: 0px 0px 28px 0px rgba(23,153,212,0.29);
+
+
+.facts
+  background-color: #FFF
+  min-height: 1000px
+
+  .icon
+    display: block
+    width: 58px
+    height: 82px
+    background-image: url('/img/facts-icon.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+  .heading-title
+    color: #000
+
+  .facts-bottom
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    +media-tablet-landscape-up()
+      justify-content: space-around
+
+    .fact
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    .fact-value
+      color: #0060FF
+      text-transform: uppercase
+      font-size: 50px
+
+    .fact-text
+      text-align: center
+      font-size: 22px
+      color: #000
+

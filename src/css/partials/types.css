@@ -1,0 +1,34 @@
+.types {
+  position: relative;
+  min-height: 1000px;
+  background-color: #000;
+}
+.types .icon {
+  display: block;
+  width: 84px;
+  height: 75px;
+  background-image: url("/img/types-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.types-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.type {
+  padding: 50px 30px 0 30px;
+  width: 30%;
+  height: 315px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 10px 5px #fff;
+  box-sizing: border-box;
+}
+.type-heading {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}

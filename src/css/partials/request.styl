@@ -1,0 +1,46 @@
+.request
+  padding: 60px 90px
+  text-align: center
+  border: 1px solid #ffffff
+
+  &-wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    flex-wrap: wrap
+
+    +media-tablet-up()
+      flex-direction: column
+
+  &-title
+    display: block
+    margin-bottom: 40px
+    font-size: 25px
+    text-transform: uppercase
+
+  &-btn
+    width: 274px
+    height: 50px
+    line-height: 50px
+    color: #ffffff
+    background-color: #c48233
+
+  &-input
+    padding: 0 10px
+    margin-bottom: 10px
+    width: 290px
+    height: 40px
+    line-height: 40px
+    color: #ffffff
+    background-color: transparent
+    border-top: none
+    border-left: none
+    border-right: none
+    border-bottom: 1px solid #5b5c5b
+    box-sizing border-box
+
+    +media-tablet-up()
+      width: 100%
+
+  &-action
+    margin-top: 40px

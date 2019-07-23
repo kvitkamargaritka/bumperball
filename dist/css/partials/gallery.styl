@@ -1,0 +1,38 @@
+.gallery
+  position: relative
+  min-height: 1000px
+  background-image: url('/img/gallery-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  z-index: 1
+
+  .gallery-top
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .icon
+    display: block
+    width: 64px
+    height: 44px
+    background-image: url('/img/gallery-icon.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+
+  .heading-title
+    text-transform: uppercase
+    font-size: 45px
+    color: #FFFFFF
+
+.gallery::before
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  display: block
+  content: ''
+  background-color: rgba(#000, 70%)
+  z-index: -1

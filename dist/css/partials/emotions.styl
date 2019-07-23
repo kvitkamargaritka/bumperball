@@ -1,0 +1,44 @@
+.emotions
+  position: relative
+
+  .man
+    position:absolute
+    top: -100px
+    right: 70px
+    z-index: 2
+    +media-desktop-up()
+      width: 400px
+    +media-tablet-landscape-up()
+      width: 300px
+    +media-tablet-up()
+      display: none
+
+  .man-img
+    display: block
+
+  .heading-title,
+  .heading-description
+    color: #C48233
+    text-transform: uppercase
+
+  .heading-title
+    font-size: 40px
+
+  .heading-description
+    font-size: 26px
+
+    hr
+      position: absolute
+      width: calc(100% - 130px)
+      border-top: 2px solid #c48233
+      margin: 0
+      z-index: -1
+
+  .emotions-bottom
+    .text
+      font-size: 24px
+      color: #000
+
+  .emotions-wrap
+    max-width: 700px
+

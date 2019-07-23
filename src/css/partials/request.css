@@ -1,0 +1,41 @@
+.request {
+  padding: 60px 90px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.request-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.request-title {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.request-btn {
+  width: 274px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #c48233;
+}
+.request-input {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  width: 290px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #5b5c5b;
+  box-sizing: border-box;
+}
+.request-action {
+  margin-top: 40px;
+}

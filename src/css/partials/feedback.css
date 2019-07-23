@@ -1,0 +1,34 @@
+.feedback {
+  position: relative;
+  min-height: 1000px;
+  background-color: #fff;
+}
+.feedback .icon {
+  display: block;
+  width: 73px;
+  height: 73px;
+  background-image: url("/img/how-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.feedback .heading-title {
+  color: #000;
+}
+.feedback-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.feedback-item {
+  width: 23%;
+}
+.feedback-image {
+  width: 100%;
+}
+.feedback-info .name {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+}

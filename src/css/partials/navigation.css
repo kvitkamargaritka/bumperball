@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navigation-link {
+  position: relative;
+  margin-right: 28px;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.navigation-link:last-child {
+  margin-right: 0;
+}
+.navigation-link:last-child:after {
+  display: none;
+}
+.navigation-link:after {
+  position: absolute;
+  content: '';
+  top: 10px;
+  right: -20px;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(-60deg);
+}
+.navigation-link:hover {
+  border-bottom-color: #c48233;
+}

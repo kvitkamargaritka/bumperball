@@ -1,0 +1,91 @@
+.slick-list {
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+}
+.btn-prev,
+.btn-next {
+  display: block;
+  width: 33px;
+  height: 63px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.btn-prev:before,
+.btn-next:before,
+.btn-prev:after,
+.btn-next:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+}
+.btn-prev:before,
+.btn-next:before {
+  top: 25px;
+  left: 0;
+}
+.btn-prev:after,
+.btn-next:after {
+  top: 4px;
+  left: 0;
+}
+.btn-prev {
+  left: 100px;
+}
+.btn-prev:before {
+  transform: rotate(45deg);
+}
+.btn-prev:after {
+  transform: rotate(-45deg);
+}
+.btn-next {
+  right: 100px;
+}
+.btn-next:before {
+  transform: rotate(-45deg);
+}
+.btn-next:after {
+  transform: rotate(45deg);
+}
+.slick-dots {
+  position: absolute;
+  bottom: -30px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li:before {
+  top: 1px;
+  transition: all 0.5s;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #c17f31;
+  position: absolute;
+}
+.slick-dots li.slick-active:before {
+  top: 0;
+  width: 8px;
+  height: 8px;
+  margin-left: -2px;
+  background-color: #008aff;
+}

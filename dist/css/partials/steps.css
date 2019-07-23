@@ -1,0 +1,18 @@
+.steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.step-icon {
+  display: block;
+  width: 119px;
+  height: 119px;
+  background-image: url("/img/conference-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.step-text {
+  margin-top: 30px;
+  font-size: 15px;
+}

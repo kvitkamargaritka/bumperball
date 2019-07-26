@@ -8,37 +8,50 @@
     z-index: 2
     +media-desktop-up()
       width: 400px
+      top: -70px
+      right: 20px
     +media-tablet-landscape-up()
-      width: 300px
+      width: 250px
     +media-tablet-up()
       display: none
 
   .man-img
     display: block
 
-  .heading-title,
-  .heading-description
+  &-title,
+  &-description
     color: #C48233
     text-transform: uppercase
 
-  .heading-title
+  &-title
     font-size: 40px
+    +media-tablet-up()
+      font-size: 30px
 
-  .heading-description
-    font-size: 26px
 
-    hr
-      position: absolute
-      width: calc(100% - 130px)
-      border-top: 2px solid #c48233
-      margin: 0
-      z-index: -1
+  &-description
+    font-size: 25px
+    +media-tablet-up()
+      font-size: 20px
 
-  .emotions-bottom
-    .text
-      font-size: 24px
-      color: #000
+    //hr
+    //  position: absolute
+    //  width: calc(100% - 130px)
+    //  border-top: 2px solid #c48233
+    //  margin: 0
+    //  z-index: -1
 
-  .emotions-wrap
+  &-wrap
+    padding-bottom: 65px
     max-width: 700px
+
+  &-top
+    padding-top: 65px
+
+  &-bottom
+    margin-top: 40px
+
+    .text
+      font-size: 18px
+      color: #000
 

@@ -1,0 +1,24 @@
+.mobile-menu {
+  width: 250px;
+  height: calc(100% - 95px);
+  background-color: #212021;
+  position: fixed;
+  top: 95px;
+  left: -100%;
+  transition: all 0.35s ease-in-out;
+  z-index: 500;
+}
+.mobile-menu__list {
+  text-align: center;
+}
+.mobile-menu__el {
+  height: 50px;
+  line-height: 50px;
+}
+.mobile-menu__link {
+  color: #fff;
+  text-transform: uppercase;
+}
+.mobile-menu.is-open {
+  left: 0;
+}

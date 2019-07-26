@@ -2,19 +2,10 @@
   background-color: #FFF
   min-height: 1000px
 
-  .icon
-    display: block
-    width: 58px
-    height: 82px
-    background-image: url('/img/facts-icon.png')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-
   .heading-title
-    color: #000
+    color: #000!important
 
-  .facts-bottom
+  .facts-list
     display: flex
     flex-direction: row
     align-items: flex-start
@@ -23,18 +14,21 @@
     +media-tablet-landscape-up()
       justify-content: space-around
 
-    .fact
-      display: flex
-      flex-direction: column
-      align-items: center
+.fact
+  display: flex
+  flex-direction: column
+  align-items: center
+  +media-tablet-landscape-up()
+    margin-right: 30px
+    margin-bottom: 30px
 
-    .fact-value
-      color: #0060FF
-      text-transform: uppercase
-      font-size: 50px
+  &-value
+    color: #0060FF
+    text-transform: uppercase
+    font-size: 50px
 
-    .fact-text
-      text-align: center
-      font-size: 22px
-      color: #000
+  &-text
+    text-align: center
+    font-size: 16px
+    color: #000
 

@@ -13,4 +13,11 @@ $(document).ready(function() {//eslint-disable-line
     nextArrow: '<span class="btn-next"></span>'
   });
 
+  //hamburger-menu
+  $('#hamburger').on('click',function() {//eslint-disable-line
+    $(this).toggleClass('open');//eslint-disable-line
+    $('.mobile-menu').toggleClass('is-open')//eslint-disable-line
+  });
+
+
 });

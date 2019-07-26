@@ -7,32 +7,17 @@
   background-size: cover
   z-index: 1
 
-  .offers-top
-    padding-top: 60px
-    display: flex
-    flex-direction: column
-    align-items: center
-
-  .icon
-    display: block
-    width: 74px
-    height: 74px
-    background-image: url('/img/offer-icon.png')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-
   .heading-title
     text-transform: uppercase
     font-size: 45px
     color: #FFFFFF
 
-.offers-bottom
-  display: flex
-  flex-direction: row
-  justify-content: space-around
-  +media-tablet-up()
-    flex-direction: column
+  &-list
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    +media-tablet-up()
+      flex-direction: column
 
 .offer
   position: relative
@@ -50,21 +35,22 @@
 
   &-title
     display: block
-    font-size: 16px
+    font-size: 20px
     text-transform: uppercase
 
   &-sub-title
     display: block
     margin: 20px 0
-    font-size: 15px
     text-transform: uppercase
     text-decoration: underline
 
   &-description
     margin-bottom: 45px
+    font-size: 16px
 
   &-items
     margin-top: 45px
+    font-size: 16px
     display: flex
     flex-direction: column
 
@@ -79,10 +65,15 @@
     height: 74px
     line-height 74px
     color: #ffffff
+    font-size: 16px
     background-color: #2351c8
     border-radius: 0 0 10px 10px
     text-transform: uppercase
     text-decoration: underline
+    transition: all .3s ease-in-out
+
+    &:hover
+      background: darken(#2351c8, 20%)
 
 
 

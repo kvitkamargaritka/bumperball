@@ -1,65 +1,70 @@
-//.slider
-//  width: 100%
-//  //text-align: center
-//  //margin: 0 auto
-//
-//  &__el
-//    margin: 0 auto
-//    width: 100%
-//    height: 100%
-//
+.slider
+  width: 100%
+  //text-align: center
+  //margin: 0 auto
+
+  &__el
+    margin: 0 auto
+    width: 100%
+    height: 100%
+
 //.slick-slide
 //  padding: 0 5px
-//
+
 .slick-list
   padding: 0
   margin: 0 auto
-  max-width: 1000px
+  max-width: 900px
 
 .btn-prev,
 .btn-next
   display: block
   width: 33px
-  height: 63px
+  height: 60px
   position: absolute
   top: 50%
   transform: translateY(-50%)
   cursor: pointer
+  +media-tablet-landscape-up()
+    top: auto
+    bottom: -110px
 
   &:before,
   &:after
     content: ''
     position: absolute
+    left: 0
     width: 30px
     height: 1px
     background-color: #ffffff
 
   &:before
-    top: 25px
-    left: 0
+    top: 17px
 
   &:after
-    top: 4px
-    left: 0
+    top: 38px
 
 .btn-prev
-  left: 100px
+  left: 0
+  +media-tablet-landscape-up()
+    left: 40%
 
   &:before
-    transform: rotate(45deg)
+    transform: rotate(-45deg)
 
   &:after
-    transform: rotate(-45deg)
+    transform: rotate(45deg)
 
 .btn-next
-  right: 100px
+  right: 0
+  +media-tablet-landscape-up()
+    right: 40%
 
   &:before
-    transform: rotate(-45deg)
-
-  &:after
     transform: rotate(45deg)
 
+  &:after
+    transform: rotate(-45deg)
 
 .slick-dots
   position: absolute
@@ -69,6 +74,8 @@
   padding: 0
   list-style: none
   text-align: center
+  +media-tablet-landscape-up()
+    display: none!important
 
   li
     position: relative

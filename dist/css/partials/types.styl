@@ -3,15 +3,6 @@
   min-height: 1000px
   background-color: #000000
 
-  .icon
-    display: block
-    width: 84px
-    height: 75px
-    background-image: url('/img/types-icon.png')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-
   &-list
     width: 100%
     display: flex
@@ -31,14 +22,22 @@
   color: #000000
   box-shadow: 0 0 10px 5px rgba(255,255,255,1)
   box-sizing border-box
-  +media-tablet-up()
-    width: 100%
+
+  +media-tablet-landscape-up()
+    width: 48%
     margin-bottom: 40px
 
-  &-heading
-    display: block
-    text-transform: uppercase
+  +media-tablet-up()
+    width: 100%
+
+  &-title
+    display: inline-block
     margin-bottom: 60px
+    font-size: 20px
+    text-transform: uppercase
+
+  &-text
+    font-size: 16px
 
   &-button-wrap
     position: absolute
@@ -51,6 +50,7 @@
     height: 74px
     line-height 74px
     color: #ffffff
+    font-size: 16px
     text-transform: uppercase
     text-decoration: underline
     background-image: linear-gradient(to right top, #eb413a, #f14c32, #f75728, #fb631b, #fe6f04)

@@ -1,0 +1,27 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.icon-vk,
+.icon-tw,
+.icon-inst,
+.icon-fb {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+}
+.icon-vk {
+  background: url("../img/vk-icon.png");
+}
+.icon-tw {
+  background: url("../img/tw-icon.png");
+}
+.icon-inst {
+  background: url("../img/instg-icon.png");
+}
+.icon-fb {
+  background: url("../img/fb-icon.png");
+}

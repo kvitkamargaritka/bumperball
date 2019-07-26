@@ -87,15 +87,43 @@
   display: none;
 }
 .intro {
-  min-height: calc(100vh - 95px);
+  height: 100vh;
+  min-height: 700px;
   position: relative;
-  background-image: url("/img/intro-bg.jpg");
+  background-image: url("../img/intro-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
   display: flex;
   flex-direction: column;
+}
+.intro .man {
+  position: absolute;
+  bottom: 90px;
+  right: 70px;
+  z-index: 2;
+  transform: translateY(100%);
+}
+@media all and (max-width: 1200px) {
+  .intro .man {
+    width: 400px;
+    top: -70px;
+    right: 20px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .intro .man {
+    width: 250px;
+  }
+}
+@media all and (max-width: 768px) {
+  .intro .man {
+    display: none;
+  }
+}
+.intro .man-img {
+  display: block;
 }
 .intro::after {
   content: '';
@@ -368,6 +396,7 @@
 .navigation-link {
   position: relative;
   margin-right: 28px;
+  font-size: 14px;
   color: #fff;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-in-out;
@@ -393,32 +422,7 @@
 }
 .emotions {
   position: relative;
-}
-.emotions .man {
-  position: absolute;
-  top: -100px;
-  right: 70px;
-  z-index: 2;
-}
-@media all and (max-width: 1200px) {
-  .emotions .man {
-    width: 400px;
-    top: -70px;
-    right: 20px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .emotions .man {
-    width: 250px;
-  }
-}
-@media all and (max-width: 768px) {
-  .emotions .man {
-    display: none;
-  }
-}
-.emotions .man-img {
-  display: block;
+  overflow: hidden;
 }
 .emotions-title,
 .emotions-description {
@@ -441,6 +445,13 @@
     font-size: 20px;
   }
 }
+.emotions-description hr {
+  position: absolute;
+  width: 100vw;
+  border-top: 2px solid #c48233;
+  margin: 0;
+  z-index: -1;
+}
 .emotions-wrap {
   padding-bottom: 65px;
   max-width: 700px;
@@ -458,7 +469,7 @@
 .gallery {
   position: relative;
   min-height: 1000px;
-  background-image: url("/img/gallery-bg.jpg");
+  background-image: url("../img/gallery-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -623,6 +634,11 @@ body {
   background-color: #fff;
   min-height: 1000px;
 }
+@media all and (max-width: 768px) {
+  .facts {
+    min-height: auto;
+  }
+}
 .facts .heading-title {
   color: #000 !important;
 }
@@ -747,6 +763,11 @@ body {
   min-height: 1000px;
   background-color: #fff;
 }
+@media all and (max-width: 768px) {
+  .how {
+    min-height: auto;
+  }
+}
 .how .heading-title {
   color: #000 !important;
 }
@@ -763,7 +784,7 @@ body {
 .icon.is-photo {
   width: 64px;
   height: 44px;
-  background-image: url("/img/gallery-icon.png");
+  background-image: url("../img/gallery-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -771,7 +792,7 @@ body {
 .icon.is-about {
   width: 58px;
   height: 82px;
-  background-image: url("/img/facts-icon.png");
+  background-image: url("../img/facts-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -779,7 +800,7 @@ body {
 .icon.is-format {
   width: 74px;
   height: 74px;
-  background-image: url("/img/offer-icon.png");
+  background-image: url("../img/offer-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -787,7 +808,7 @@ body {
 .icon.is-how {
   width: 73px;
   height: 73px;
-  background-image: url("/img/how-icon.png");
+  background-image: url("../img/how-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -795,7 +816,7 @@ body {
 .icon.is-ball {
   width: 84px;
   height: 75px;
-  background-image: url("/img/types-icon.png");
+  background-image: url("../img/types-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -803,7 +824,7 @@ body {
 .icon.is-feedback {
   width: 73px;
   height: 73px;
-  background-image: url("/img/how-icon.png");
+  background-image: url("../img/how-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -811,15 +832,10 @@ body {
 .icon.is-mail {
   width: 62px;
   height: 49px;
-  background-image: url("/img/contact-icon.png");
+  background-image: url("../img/contact-icon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-.icon.is-setting {
-  width: 17px;
-  height: 17px;
-  background: url("../img/icon-setting.png");
 }
 .icon-vk,
 .icon-tw,

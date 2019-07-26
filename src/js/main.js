@@ -1,6 +1,9 @@
-$(document).ready(function() {//eslint-disable-line
+var $ = jQuery;//eslint-disable-line
 
-  var $slick = $('.slider');//eslint-disable-line
+$(document).ready(function() {
+
+  var $slick = $('.slider'),
+    $desktopNavigationLink = $('.navigation-link');
 
   $slick.slick({
     dots: true,
@@ -14,10 +17,19 @@ $(document).ready(function() {//eslint-disable-line
   });
 
   //hamburger-menu
-  $('#hamburger').on('click',function() {//eslint-disable-line
-    $(this).toggleClass('open');//eslint-disable-line
-    $('.mobile-menu').toggleClass('is-open')//eslint-disable-line
+  $('#hamburger').on('click',function() {
+    $(this).toggleClass('open');
+    $('.mobile-menu').toggleClass('is-open');
   });
 
+  // Scroll to pages
+  $desktopNavigationLink.click(function() {
+    var margin = 0,
+      id  = $(this).attr('href'),
+      top = $(id).offset().top;
 
+    $('body,html').animate({
+      scrollTop: top - margin
+    }, 1000);
+  });
 });

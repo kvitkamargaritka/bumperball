@@ -1,13 +1,34 @@
 .intro
-  min-height: calc(100vh - 95px)
+  height: 100vh
+  min-height: 700px
   position: relative
-  background-image: url('/img/intro-bg.jpg')
+  background-image: url('../img/intro-bg.jpg')
   background-position: top center
   background-repeat: no-repeat
   background-size: cover
   z-index: 0
   display: flex
   flex-direction: column
+
+  .man
+    position:absolute
+    bottom: 90px
+    right: 70px
+    z-index: 2
+    transform: translateY(100%)
+
+    +media-desktop-up()
+      width: 400px
+      top: -70px
+      right: 20px
+    +media-tablet-landscape-up()
+      width: 250px
+    +media-tablet-up()
+      display: none
+
+  .man-img
+    display: block
+
 
 .intro::after
   content: ''
@@ -26,6 +47,9 @@
   left: 50%
   transform: translate(-50%, -50%)
   z-index: 2
+
+  //+media-phone-up()
+  //  top: calc(50% - 55px)
 
   .intro-title
     font-size: 60px
